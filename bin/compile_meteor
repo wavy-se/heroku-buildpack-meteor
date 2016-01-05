@@ -10,7 +10,7 @@ set -e  # fail fast
 BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
-APP_SOURCE=$BUILD_DIR/app_src
+APP_SOURCE=$BUILD_DIR/app_src/kundapp
 METEOR_HOME=$BUILD_DIR/.meteor_tool
 PATH=$METEOR_HOME:$BUILD_DIR/.heroku/node/bin:$PATH
 bp_dir=$(cd $(dirname $0); cd ..; pwd)
